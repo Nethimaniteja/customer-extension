@@ -14,11 +14,11 @@ app.get('/mock-api/customer-profile', (req, res) => {
 
   // Simulate quiz results → recommended product IDs
   const mockData = {
-    '123': ['8086121982235', '8086121916707'],
-    '456': ['8086121733195', '8086121916707'],
+    '23131448443251': ['52697678578035', '52697678971251'],
+    '12345678912342': ['52697678578035', '52697678971251'],
   };
 
-  const recommendations = mockData[customerId] || ['8086121982235']; // default if not found
+  const recommendations = mockData[customerId] || ['52697678578035']; // default if not found
   res.json({ recommendations });
 });
 
