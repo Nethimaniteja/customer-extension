@@ -14,8 +14,8 @@ app.get('/mock-api/customer-profile', (req, res) => {
 
   // Simulate quiz results → recommended product IDs
   const mockData = {
-    '23131448443251': ['52697678578035', '52697678971251'],
-    '12345678912342': ['52697678578035', '52697678971251'],
+    '23131448443251': [{ id: 52697678578035, handle: 'example-shirt'},{id: 52697678971251, handle:'example-pants'}],
+    '12345678912342': [{ id: 52697678578035, handle: 'example-shirt'},{id: 52697678971251, handle:'example-pants'}],
   };
 
   const recommendations = mockData[customerId] || ['52697678578035']; // default if not found
